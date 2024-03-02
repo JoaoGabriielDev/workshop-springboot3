@@ -1,5 +1,6 @@
 package com.educandoweb.course.resources;
 
+import com.educandoweb.course.entities.Order;
 import com.educandoweb.course.entities.User;
 import com.educandoweb.course.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,5 @@ public class UserResource {
         User obj = service.findById(id);
         return ResponseEntity.ok().body(obj);
     }
-
 
 }
